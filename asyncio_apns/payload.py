@@ -75,5 +75,5 @@ class Payload:
         if self.category is not None:
             aps_dict['category'] = self.category
         if self.custom is not None:
-            result.update(self.custom)
+            aps_dict.update(self.custom)
         return result
